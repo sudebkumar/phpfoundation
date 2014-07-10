@@ -8,5 +8,11 @@ $films =array(
 		print_r ($films);
 		echo "</pre>";
 		
-	
+	$counter=0;
+	foreach ($films as $key=>$genres)
+	{
+	echo $key."-".
+	$genres."<br/>";
+	$counter++;
+	}
 		
