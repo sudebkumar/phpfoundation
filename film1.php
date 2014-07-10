@@ -20,21 +20,21 @@ $films = array(
 foreach ($films as $fkey => $firstValue) {
     
     if($fkey=="genres")
-    {
-        foreach ($firstValue as $key => $secondValue)
-        {
-            if($secondValue==$genree)
-            {
-               $keyValue=$key;
+  {
+    foreach ($firstValue as $key => $secondValue)
+      {
+        if($secondValue==$genree)
+         {
+            $keyValue=$key;
                
-            }
-            
         }
-    }
+            
+      }
+   }
   
 }
-$filmTitle = $films['film_titles'][$keyValue];
- return $filmTitle;
+ $filmTitle = $films['film_titles'][$keyValue];
+       return $filmTitle;
 
 }
 
@@ -53,17 +53,16 @@ $films = array(
 
 foreach ($films as $fkey => $firstValue) {
     
-    if($fkey=="genres")
+  if($fkey=="genres")
     {
-        foreach ($firstValue as $key => $secondValue)
-        {
-            if($secondValue==$genree)
-            {
-              $keyValue=$key;
-
+     foreach ($firstValue as $key => $secondValue)
+     {
+       if($secondValue==$genree)
+         {
+          $keyValue=$key;
  }
             
-        }
+      }
     }
   
 }
@@ -72,8 +71,6 @@ foreach ($films as $fkey => $firstValue) {
  return $star;
 
 }
-
-
 function printTitleAndStar()
 {
   echo "Film Title is : ".getTitle ("action");
