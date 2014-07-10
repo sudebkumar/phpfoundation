@@ -13,4 +13,4 @@ class person extends User{
 
 $person = new Person();
 echo $person->getUserAge();
-//echo $person->UserAge();
+echo $person->UserAge();
