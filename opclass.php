@@ -4,6 +4,10 @@ class User{
   var $name ="FTFL";
   var $email ="";
   
+  function__construct($name="FTFL",$email="lict@ftfl.com"){
+  $this->name = $name;
+  $this->name = $email;
+  }
   function getName() {
  return $this->name;
   }
