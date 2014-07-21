@@ -77,7 +77,7 @@ catch(error){
      */
      
      
-    console.log("aStringVariable" in window)
+    /*console.log("aStringVariable" in window)
         
     console.log(aVariable+anothervariable)
     //a number+a string
@@ -119,17 +119,21 @@ catch(error){
     
     else{
         console.log("i am false");
-    }
+    }*/
     
     //declaration of a function
     
-    function addTwonumbers(){
+    function addTwoumbers(){
         
-        var sum = 2+3;
+        //var sum = num1+ num2;
+        var sum = arguments[0]+arguments[1];
         return sum;
     }
     //function call
-    var result= addTwonumbers();
-    console.log(sum);
+    var result = addTwoumbers(4,2);
+    console.log(result);
+    
+    var addNumbers = addTwoumbers;
+    console.log(addNumbers(5,6));
     
 </script>Hello world
