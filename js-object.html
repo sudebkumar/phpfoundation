@@ -1,6 +1,7 @@
 <script>
     
-   /* //Defining an object
+    
+    /*//Defining an object
     var car = new object();
     car.name = 'Audi';
     car.wheel = 4;
@@ -11,11 +12,11 @@
     //using the car object
     
     console.log(car.wheel);
-    console.log(car.drive());
+    console.log(car.drive());*/
     
     //object literal
     
-    var fruits = {
+   /* var fruits = {
         name:'apple',
         color:'red',
         taste:'sweet',
@@ -26,10 +27,10 @@
     console.log(typeof fruits);
   
     console.log(fruits.name);
-    console.log(fruits.satisfy());*/
+    console.log(fruits.satisfy());
     
     
-   /* var student ={
+   var student ={
         name:'sudeb',
         id:'FTFL007',
         email:'aa@ss.com',
@@ -42,9 +43,9 @@
         }
     }
     console.log(student.tools.desktop.monitor);
-    console.log(student['tools']['desktop']['monitor']);
+    console.log(student['tools']['desktop']['monitor']);*/
     //defining object using a constructor Function
-    function cars (make,model,year){
+   /* function cars (make,model,year){
         this.make = make;
         this.model= model;
         this.year = year;
@@ -58,11 +59,25 @@
     console.log(typeof mycar1);
     console.log(mycar1.make);
     console.log(typeof mycar2);
-    console.log(mycar2.make);*/
+    console.log(mycar2.make);
+    console.log(mycar2.drive());
+    */
+   
     
     //defining object using object.create()
+    var person ={};
+    var person = {
+        kind:'human'
+    }
+    
+    var sudeb = object.create(person,
+                            {age:{value:19}});
+    console.log(sudeb.kind);
+     console.log(sudeb.age);
+            
+    
+    /*"use strict"
     //alert(this);
-    "use strict"
     console.log(this);//window
     
     var ftfl = {
@@ -75,6 +90,6 @@
     
     
     var aFTFL = ftfl.sudeb;
-    console.log (aFTFL)();
+    console.log (aFTFL)();*/
     
 </script>
