@@ -208,10 +208,15 @@
                 var total = alABBR.length;
                 for(i=0;i<total;i++){
                   // console.log(alABBR[i].innerHTML);
-                   console.log(alABBR[i].nodeType);
-                   //console.log(alABBR[i].firstchild);
+                   //console.log(alABBR[i].nodeType);
+                   console.log(alABBR[i].firstchild.nodeValue);
+                   console.log(alABBR[i].childNodes[0].nodeValue);
                 }
-                
+                var zenSummary = document.getElementById('zen-summary');
+                console.log(zenSummary.innerHTML);
+                zenSummary.innerHTML ="<b>Hello, I have replace you.</b>"
+                zenSummary.setAttribute('style','background-color:red');
+               // zenSummary.setAttribute('style','display:none');
             }catch(e){
                 console.log(e.message);
             }
