@@ -48,9 +48,16 @@
         this.make = make;
         this.model= model;
         this.year = year;
+        this.drive =function (){
+            return "I am driving" +this.make;
+        }
     }
-    var mycar = new cars("Eagle","Talon Tsi",1990);
-    console.log(typeof mycar);
+    var mycar1 = new cars("Eagle","Talon Tsi",1990);
+    var mycar2 = new cars("Mazda","Miata",1990);
+    console.log(typeof mycar1);
   
-    console.log(mycar.make);
+    console.log(mycar1.make);
+    console.log(typeof mycar2);
+  
+    console.log(mycar2.make);
 </script>
