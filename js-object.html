@@ -29,7 +29,7 @@
     console.log(fruits.satisfy());*/
     
     
-    var student ={
+   /* var student ={
         name:'sudeb',
         id:'FTFL007',
         email:'aa@ss.com',
@@ -54,10 +54,26 @@
     }
     var mycar1 = new cars("Eagle","Talon Tsi",1990);
     var mycar2 = new cars("Mazda","Miata",1990);
+   
     console.log(typeof mycar1);
-  
     console.log(mycar1.make);
     console.log(typeof mycar2);
-  
-    console.log(mycar2.make);
+    console.log(mycar2.make);*/
+    
+    //defining object using object.create()
+    alert(this);
+    console.log(this);
+    
+    var ftfl = {
+        sudeb: function(){
+            return this;
+        }
+    };
+    console.log(ftfl.sudeb());
+    
+    
+    
+    var aFTFL = ftfl.sudeb;
+    console.log (aFTFL)();
+    
 </script>
